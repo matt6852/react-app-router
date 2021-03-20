@@ -9,6 +9,7 @@ import SingleCocktail from "./pages/SingleCocktail";
 import Error from "./pages/Error";
 // import components
 import Navbar from "./components/Navbar";
+import Contacts from "./pages/Contacts";
 
 function App() {
   const { showContent, setShowContent } = useGlobalContext();
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
           </Route>
           <Route path="/cocktail/:id">
             <SingleCocktail />
