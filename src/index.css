@@ -205,7 +205,7 @@ Navbar
   color: var(--primaryColor);
 }
 .logo {
-  width: 11rem;
+  width: 4rem;
   border-radius: 30%;
 }
 /* 
@@ -272,6 +272,10 @@ Cocktails List
   .cocktails-center {
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
   }
+  .logo {
+  width: 11rem;
+  border-radius: 30%;
+}
 }
 /* 
 ====== 
