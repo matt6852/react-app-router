@@ -19,6 +19,7 @@ const SearchForm = () => {
             onChange={() => setSearchText(searchValue.current.value)}
             type="text"
             id="name"
+            placeholder ="example (vodka)"
           ></input>
         </div>
       </form>

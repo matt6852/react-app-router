@@ -6,7 +6,7 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [searchText, setSearchText] = useState(null); // cange leter to null
+  const [searchText, setSearchText] = useState("vodka"); // cange leter to null
   const [cocktails, setCocktails] = useState([]);
   const [showContent, setShowContent] = useState(false)
 
@@ -46,7 +46,15 @@ const AppProvider = ({ children }) => {
   console.log(cocktails);
 
   useEffect(() => {
-    fetchData();
+    const timeOutId = setTimeout(() => {
+      if (searchText) {
+        fetchData();
+        
+      }
+    }, 1000);
+    return () => {
+      clearTimeout(timeOutId);
+    };
   }, [searchText,fetchData]);
 
   console.log(searchText);
