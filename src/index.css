@@ -38,7 +38,7 @@ Global Styles
 body {
   font-family: 'Dancing Script', cursive;
   color: #f7f7f7;
-  background: url(../src/img/background.jpg)center/cover;
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,28,147,0.5) 35%, rgba(0,212,255,1) 100%), url(../src/img/background3.jpg)center/cover fixed no-repeat;
   line-height: 1.4;
   font-size: 1.1rem;
   font-weight: 700;
