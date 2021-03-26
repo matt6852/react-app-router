@@ -43,7 +43,7 @@ const AppProvider = ({ children }) => {
       setLoading(false);
     }
   },[searchText])
-  console.log(cocktails);
+  
 
   useEffect(() => {
     const timeOutId = setTimeout(() => {
@@ -57,7 +57,7 @@ const AppProvider = ({ children }) => {
     };
   }, [searchText,fetchData]);
 
-  console.log(searchText);
+  
   return (
     <AppContext.Provider value={{ loading, cocktails, setSearchText,showContent,setShowContent, }}>
       {children}

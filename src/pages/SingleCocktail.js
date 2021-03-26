@@ -64,7 +64,7 @@ const SingleCocktail = () => {
 
   }
   if(!cockatail){
-    console.log(cockatail);
+
     return <h2 className = "">somting bad happend ((</h2>
   }
   const {name,image,category,info,glass,instructions,ingredients}= cockatail

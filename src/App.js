@@ -13,7 +13,6 @@ import Contacts from "./pages/Contacts";
 
 function App() {
   const { showContent, setShowContent } = useGlobalContext();
-  console.log(showContent);
   return (
     <Router>
       <Navbar />
